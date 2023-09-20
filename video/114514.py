@@ -1,3 +1,4 @@
+
 # coding: utf8
 import cv2 as cv
 import os
@@ -18,7 +19,7 @@ while True:
     # 转灰度图
     img_gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
     # 缩小图片并调整长宽比
-    img_resize = cv.resize(img_gray, (int(width / 1.79), int(height / 10)))
+    img_resize = cv.resize(img_gray, (int(width / 3), int(height / 16)))
 
     text = ''
     # 遍历图片中的像素
@@ -32,5 +33,5 @@ while True:
     # 输出生成的字符方阵
     print(text)
     # 适当暂停一下
-    time.sleep(0.000001)
+    time.sleep(0.0466666666666666)
     
